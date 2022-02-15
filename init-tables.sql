@@ -8,6 +8,16 @@ CREATE TABLE products (
     active boolean NOT NULL
 );
 
+CREATE TABLE orders_item (
+    id SERIAL PRIMARY KEY,
+    product_id INT references products(id),
+    quantity INT
+);
+
+INSERT INTO orders_item(product_id, quantity) VALUES (2, 3);
+
+
+
 
 INSERT INTO products(name, description, price, category, image_url, active) VALUES('Pearl Coasters', 'An Astrid Classic. White coasters with gold flakes and edging', 8.00, 'coasters', 'astridwhite2.jpeg', 'true');
 
