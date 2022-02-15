@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Astrid Art</title>
+	<link rel="stylesheet" href="./styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="logo-header">
+		<div class="logo-container">
+			<a href="index.html"><img class="logo-image" src="./Images/AstridArtLogo.png"></a>
+		</div>
+	</div>
+
+	<nav>
+		<ul class="nav-bar">
+			<a href="index.html"><li>HOME</li></a>
+			<a href="index.html#products"><li>PRODUCTS</li></a>
+			<a href="index.html#contact"><li>CONTACT</li></a>
+			<li class="cart">
+				<a href="cart.html">
+					<ion-icon class="cart-icon" name="basket"></ion-icon>CART <span>0</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="products-container">
+		<div class="product-header">
+			<h5 class="product-title">PRODUCT</h5>
+			<h5 class="price-head">PRICE</h5>
+			<h5 class="quantity-head">QUANTITY</h5>
+			<h5 class="total-head">TOTAL</h5>
+		</div>
+		<div class="products">
+		</div>
+		<div class="order-button-container">
+			<form class="order-button"> 
+				<button class="submit-order-button" type="submit">Order</button>
+			</form>
+		</div>
+	</div>
+	
+
+	<footer class="footer">
+		<a href="https://www.instagram.com/astridartuk" target="blank"><p>On Instagram</p></a>
+		<p>Made with LOVE by Astrid :)</p>
+		<a href="mailto:astridartuk@gmail.com"><p>astridartuk@gmail.com</p></a>
+	</footer>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="productToCart.js" defer></script>
+	<script src="cartscript.js" defer></script>
+</body>
+
+</html>
