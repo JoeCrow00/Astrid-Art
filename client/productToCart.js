@@ -1,5 +1,5 @@
 
-function addToCartListener() {
+async function addToCartListener() {
 
 let carts = document.querySelectorAll('.example_a');
 
@@ -11,7 +11,7 @@ for (let i=0; i < carts.length; i++) {
         totalCost(product);
     })
 }
-    // console.log(2);
+    console.log(2);
 };
 
 

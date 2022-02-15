@@ -47,7 +47,7 @@ const appendToDOM = (users) => {
 };
 
 const fetchProducts = () => {
-    axios.get('http://localhost:3000/products')
+    axios.get('http://localhost:5000/products')
         .then(response => {
             const users = response.data;
             console.log(`GET list users`, users);

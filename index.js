@@ -6,7 +6,7 @@ app.use(cors())
 
 const db = require('./queries')
 
-const PORT = 3000
+const PORT = process.env.PORT || 5000;
 
 
 

@@ -37,7 +37,7 @@ const appendToDOM = (users) => {
 };
 
 const fetchUser = () => {
-    axios.get(`http://localhost:3000/products/${productId}`)
+    axios.get(`http://localhost:5000/products/${productId}`)
         .then(response => {
             let userId = response.data
             console.log(`GET single user by ID`, userId);

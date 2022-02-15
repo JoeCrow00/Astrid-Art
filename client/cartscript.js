@@ -1,5 +1,5 @@
 const createOrder = (order) => {
-        axios.post('http://localhost:3000/orders', order)
+        axios.post('http://localhost:5000/orders', order)
             .then(response => {
                 let addedOrder = response.data;
                 console.log(`POST: order was successful`, addedOrder);
